@@ -87,7 +87,7 @@ export default function DocumentSettings({ workspace, systemSettings }) {
     e.preventDefault();
     setLoading(true);
     showToast("Updating workspace...", "info", { autoClose: false });
-    setLoadingMessage("This may take a while for large documents");
+    setLoadingMessage("正在解析中...");
 
     const changesToSend = {
       adds: movedItems.map((item) => `${item.folderName}/${item.name}`),

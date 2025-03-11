@@ -186,24 +186,7 @@ export default function ChatHistory({
           <p className="text-white/60 text-lg font-base py-4">
             {t("chat_window.welcome")}
           </p>
-          {!user || user.role !== "default" ? (
-            <p className="w-full items-center text-white/60 text-lg font-base flex flex-col md:flex-row gap-x-1">
-              {t("chat_window.get_started")}
-              <span
-                className="underline font-medium cursor-pointer"
-                onClick={showModal}
-              >
-                {t("chat_window.upload")}
-              </span>
-              {t("chat_window.or")}{" "}
-              <b className="font-medium italic">{t("chat_window.send_chat")}</b>
-            </p>
-          ) : (
-            <p className="w-full items-center text-white/60 text-lg font-base flex flex-col md:flex-row gap-x-1">
-              {t("chat_window.get_started_default")}{" "}
-              <b className="font-medium italic">{t("chat_window.send_chat")}</b>
-            </p>
-          )}
+
           <WorkspaceChatSuggestions
             suggestions={workspace?.suggestedMessages ?? []}
             sendSuggestion={handleSendSuggestedMessage}

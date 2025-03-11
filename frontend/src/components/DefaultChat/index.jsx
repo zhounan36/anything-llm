@@ -35,11 +35,11 @@ export default function DefaultChatContainer() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const fetchedMessages = await System.getWelcomeMessages();
-      setFetchedMessages(fetchedMessages);
-    };
-    fetchData();
+    // const fetchData = async () => {
+    //   // const fetchedMessages = await System.getWelcomeMessages();
+    //   // setFetchedMessages(fetchedMessages);
+    // };
+    // fetchData();
   }, []);
 
   const MESSAGES = [
@@ -178,28 +178,28 @@ export default function DefaultChatContainer() {
   ];
 
   useEffect(() => {
-    function processMsgs() {
-      if (!!window.localStorage.getItem("anythingllm_intro")) {
-        setMockMessages([...MESSAGES]);
-        return false;
-      } else {
-        setMockMessages([MESSAGES[0]]);
-      }
+    // function processMsgs() {
+    //   // if (!!window.localStorage.getItem("anythingllm_intro")) {
+    //   //   setMockMessages([...MESSAGES]);
+    //   //   return false;
+    //   // } else {
+    //   //   setMockMessages([MESSAGES[0]]);
+    //   // }
 
-      var timer = 500;
-      var messages = [];
+    //   // var timer = 500;
+    //   // var messages = [];
 
-      MESSAGES.map((child) => {
-        setTimeout(() => {
-          setMockMessages([...messages, child]);
-          messages.push(child);
-        }, timer);
-        timer += 2_500;
-      });
-      window.localStorage.setItem("anythingllm_intro", 1);
-    }
+    //   // MESSAGES.map((child) => {
+    //   //   setTimeout(() => {
+    //   //     setMockMessages([...messages, child]);
+    //   //     messages.push(child);
+    //   //   }, timer);
+    //   //   timer += 2_500;
+    //   // });
+    //   window.localStorage.setItem("anythingllm_intro", 1);
+    // }
 
-    processMsgs();
+    // processMsgs();
   }, []);
 
   return (

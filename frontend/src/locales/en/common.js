@@ -673,7 +673,7 @@ const TRANSLATIONS = {
     },
 
     manage: {
-      documents: "Documents",
+      documents: "文件",
       "data-connectors": "Data Connectors",
       "desktop-only":
         "Editing these settings are only available on a desktop device. Please access this page on your desktop to continue.",
@@ -681,34 +681,32 @@ const TRANSLATIONS = {
       editing: "Editing",
     },
     directory: {
-      "my-documents": "My Documents",
-      "new-folder": "New Folder",
-      "search-document": "Search for document",
-      "no-documents": "No Documents",
-      "move-workspace": "Move to Workspace",
-      name: "Name",
-      "delete-confirmation":
-        "Are you sure you want to delete these files and folders?\nThis will remove the files from the system and remove them from any existing workspaces automatically.\nThis action is not reversible.",
+      "my-documents": "我的文件",
+      "new-folder": "新建文件夹",
+      "search-document": "搜索文件",
+      "no-documents": "没有文件",
+      "move-workspace": "添加到工作区",
+      name: "名称",
+      "delete-confirmation":"是否确实要删除这些文件和文件夹？",
       "removing-message":
-        "Removing {{count}} documents and {{folderCount}} folders. Please wait.",
-      "move-success": "Successfully moved {{count}} documents.",
+        "删除 {{count}} 个文档和 {{folderCount}} 个文件夹。请稍候。",
+      "move-success": "已成功移动 {{count}} 个文档。",
       date: "Date",
       type: "Type",
-      no_docs: "No Documents",
-      select_all: "Select All",
-      deselect_all: "Deselect All",
-      remove_selected: "Remove Selected",
-      costs: "*One time cost for embeddings",
-      save_embed: "Save and Embed",
+      no_docs: "没有文件",
+      select_all: "全选",
+      deselect_all: "全不选",
+      remove_selected: "删除选定项",
+      costs: "*嵌入的一次性费用",
+      save_embed: "保存和嵌入",
     },
     upload: {
       "processor-offline": "Document Processor Unavailable",
       "processor-offline-desc":
         "We can't upload your files right now because the document processor is offline. Please try again later.",
-      "click-upload": "Click to upload or drag and drop",
-      "file-types":
-        "supports text files, csv's, spreadsheets, audio files, and more!",
-      "or-submit-link": "or submit a link",
+      "click-upload": "点击上传",
+      "file-types": "支持文本文件、CSV、电子表格等！",
+      "or-submit-link": "",
       "placeholder-link": "https://example.com",
       fetching: "Fetching...",
       "fetch-website": "Fetch website",
@@ -740,7 +738,7 @@ const TRANSLATIONS = {
   },
 
   chat_window: {
-    welcome: "Welcome to your new workspace.",
+    welcome: "",
     get_started: "To get started either",
     get_started_default: "To get started",
     upload: "upload a document",
